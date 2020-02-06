@@ -6,13 +6,21 @@
 
 
 	</head>
+	
 	<body style="background-color: black;">
 		<div>
-		<a href="{{ url_for('fetch') }}">Fetch Table Name</a> <br>
-
-		<a href="{{ url_for('querry') }}">Querry</a>
+		<a href="{{ url_for('tables') }}">Fetch Table Name</a>
+		<br>
+		<a href="{{ url_for('login') }}">Login</a>
+		<br>
+		<a href="{{ url_for('signUp') }}">Sing Up</a>
+		<br>
+		<a href="{{ url_for('get')}}">Get Events</a>
+		<br>
+		<a href="{{url_for('createEvent')}}">Create Event</a>
 		{%include 'bodydefs.html'%}
 	</div>
+
 	</body>
 
 </html>
